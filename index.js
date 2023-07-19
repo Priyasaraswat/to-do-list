@@ -17,6 +17,7 @@ app.use("/api/v1",taskRoute)
 const PORT=process.env.PORT||5000;
 
 const __dirname1=path.resolve();
+console.log(__dirname1)
 
  if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname1, "/client/build")));
